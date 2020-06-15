@@ -11,9 +11,10 @@ int partition(int arr[], int low, int high, size_t size)
 {
 	int pivot = arr[high];
 	int i = (low - 1);
+	int j;
 	int temp = 0;
 
-	for (int j = low; j <= high - 1; j++)
+	for (j = low; j <= high - 1; j++)
 	{
 		if (arr[j] < pivot)
 		{
